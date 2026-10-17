@@ -48,7 +48,7 @@ describe('Asynchronous Fetching ', () => {
     
   })
   it('should create an h1 and p element to add', async() => {
-    await new Promise(resolve => setTimeout(resolve, 200)); 
+    await new Promise(resolve => setTimeout(resolve, 100)); 
     let h1 = document.querySelector("h1")
     let p = document.querySelector("p")
     expect(h1.textContent).to.include("sunt aut facere repellat")
